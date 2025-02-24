@@ -35,7 +35,7 @@
         print(" ".join(hint))
 
     def display_answer(answer):
-        print(" ",join(answer))
+        print(" ".join(answer))
  
     def main():
         ans = random.choice(words)
