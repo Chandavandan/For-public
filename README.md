@@ -90,7 +90,7 @@ Alarm clock (python code)
     def set_alarm(alarm_time):
         print(f"Alarm set for {alarm_time} ")
         is_running = True
-        sound_file = "Sweaty Linen - Surf Ninja 3.mp3"
+        sound_file = "my_music.mp3"
 
         while is_running:
             current_time = datetime.datetime.now().strftime("%H:%M:%S")
@@ -99,7 +99,7 @@ Alarm clock (python code)
             if current_time == alarm_time:
                 print("WAKE UP 😴😴🥱")
 
-                pygame.mixer.init
+                pygame.mixer.init()
                 pygame.mixer.music.load(sound_file)
                 pygame.mixer.music.play
 
